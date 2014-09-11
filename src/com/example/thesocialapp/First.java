@@ -4,7 +4,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+//Created by Mark Jones
+//TheSocialAPP
+//Assets will be in Stuff folder in project.  If you use anything in stuff, make sure you copy the file to the correct folder in
+//the project!
 public class First extends ActionBarActivity {
 
 	@Override
