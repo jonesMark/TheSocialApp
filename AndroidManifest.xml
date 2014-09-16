@@ -22,6 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FeaturedEvents"
+            android:label="@string/title_activity_featured_events" >
+        </activity>
+        <activity
+            android:name=".CalanderofEvents"
+            android:label="@string/title_activity_calanderof_events" >
+        </activity>
+        <activity
+            android:name=".MyCalanderPage"
+            android:label="@string/title_activity_my_calander_page" >
+        </activity>
     </application>
 
 </manifest>

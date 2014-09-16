@@ -4,23 +4,19 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-//Created by Mark Jones
-//TheSocialAPP
-//Auto link to The main page, a mock loading page
-//Assets will be in Stuff folder in project.  If you use anything in stuff, make sure you copy the file to the correct folder in
-//the project!
-public class First extends ActionBarActivity {
+
+public class CalanderofEvents extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_first);
+		setContentView(R.layout.activity_calanderof_events);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.first, menu);
+		getMenuInflater().inflate(R.menu.calanderof_events, menu);
 		return true;
 	}
 
