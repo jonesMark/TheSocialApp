@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".FeaturedEvents"
+            android:name=".MainMenu"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +33,10 @@
         <activity
             android:name=".MyCalanderPage"
             android:label="@string/title_activity_my_calander_page" >
+        </activity>
+        <activity
+            android:name=".FeaturedEvents"
+            android:label="@string/title_activity_main_menu" >
         </activity>
     </application>
 
