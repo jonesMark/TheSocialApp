@@ -8,5 +8,15 @@
     <string name="title_activity_featured_events">FeaturedEvents</string>
     <string name="title_activity_calanderof_events">CalanderofEvents</string>
     <string name="title_activity_my_calander_page">MyCalanderPage</string>
+    <string name="interests">What are you interested in?</string>
+    <string name="calendar_of_events_page">To Calendar of Events</string>
+    <string name="dismiss">X</string>
+    <string name="modern_love">MODERN LOVE"\n"FRIDAY, SEPTEMBER 13</string>
+    <string name="description1">DANCE/MOVEMENT"\n"FREE, 21+"\n"BASEMEN BAR</string>
+    <string name="description2">DJ Eight Ten presents Modern LOVE. Have you "\n"heard the good
+        news? It\'s a dance party and you "\n"are invited! Music without borders,
+        outside of time.</string>
+  
+    
 
 </resources>
