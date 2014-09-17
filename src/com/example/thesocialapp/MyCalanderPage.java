@@ -13,9 +13,9 @@ import android.widget.TextView;
 public class MyCalanderPage extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
-		View view = inflater.inflate(R.layout.tabs, container, false);
-		TextView textview = (TextView) view.findViewById(R.id.tabtextview);
-		textview.setText(/*R.string.One*/ "hello");
+		View view = inflater.inflate(R.layout.activity_my_calander_page, container, false);
+		//TextView textview = (TextView) view.findViewById(R.id.tabtextview);
+		//textview.setText(/*R.string.One*/ "hello");
 		return view;
 	}
 

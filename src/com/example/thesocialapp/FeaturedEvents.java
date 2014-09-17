@@ -13,9 +13,9 @@ import android.widget.TextView;
 public class FeaturedEvents extends Fragment  {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 				Bundle savedInstanceState){
-			View view = inflater.inflate(R.layout.tabs, container, false);
-			TextView textview = (TextView) view.findViewById(R.id.tabtextview);
-			textview.setText("hello");
+			View view = inflater.inflate(R.layout.activity_featured_events, container, false);
+			//TextView textview = (TextView) view.findViewById(R.id.tabtextview);
+			//textview.setText("hello");
 			return view;
 		}
 
