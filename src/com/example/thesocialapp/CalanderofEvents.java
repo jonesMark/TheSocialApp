@@ -17,6 +17,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 public class CalanderofEvents extends Fragment {
+	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_calanderof_events, container, false);
@@ -26,9 +27,9 @@ public class CalanderofEvents extends Fragment {
 	}
 	public class CalanderofEvents1 extends Activity {
 
-		@Override
-		public void onCreate(Bundle savedInstanceState) {
-			super.onCreate(savedInstanceState);
+		
+		public void onCreate(Bundle savedInstanceState1) {
+			super.onCreate(savedInstanceState1);
 			setContentView(R.layout.activity_calanderof_events);
 
 			String[] events = getResources().getStringArray(R.array.friday_event_list);
