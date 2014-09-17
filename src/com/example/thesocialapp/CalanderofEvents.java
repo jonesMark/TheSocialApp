@@ -41,7 +41,7 @@ public class CalanderofEvents extends Fragment {
 			};
 
 			CustomList adapter = new CustomList(this, events, icons);
-			ListView list = (ListView)findViewById(R.id.list);
+			/*ListView list = (ListView)findViewById(R.id.list);
 			list.setAdapter(adapter);
 
 			list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -62,7 +62,7 @@ public class CalanderofEvents extends Fragment {
 
 							});
 				}
-			});
+			});*/
 		}
 
 		@Override
@@ -84,3 +84,31 @@ public class CalanderofEvents extends Fragment {
 		}
 	}
 }
+/* This is laurens XML for this page.  Use if there is time to fix.
+ * <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interests"
+         />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
+*/
