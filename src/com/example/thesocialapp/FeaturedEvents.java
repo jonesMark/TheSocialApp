@@ -13,46 +13,35 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 
 public class FeaturedEvents extends Fragment  {
+	boolean switchme = true;
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState){
-		View view = inflater.inflate(R.layout.activity_calanderof_events, container, false);
+		View view = inflater.inflate(R.layout.activity_featured_events, container, false);
 		//main button
-		ImageView imagebutton = (ImageView) view.findViewById(R.id.imagebutton);
-		//Button in popup, buttonception
-		ImageView popupbutton = (ImageView) view.findViewById(R.id.nextpage);
+		ImageView imagebutton = (ImageView) view.findViewById(R.id.feat);
+
 		imagebutton.setOnClickListener(
 				new OnClickListener() {
 					public void onClick(View v){
 						LayoutInflater layoutInflater = (LayoutInflater)getActivity().getLayoutInflater();
 						View view = layoutInflater.inflate(R.layout.event_popup, null);
-						final View view1 = layoutInflater.inflate(R.layout.getsocial_popup, null);
 						final PopupWindow popupWindow = new PopupWindow(view, 850, 1200);
-						final PopupWindow popupWindow1 = new PopupWindow(view1, 850, 1200);
 						popupWindow.showAsDropDown(view, 10, 10);
 						ImageView dismiss = (ImageView)view.findViewById(R.id.nextpage);
-						ImageView dismiss1 = (ImageView)view.findViewById(R.id.dismissSocial);
 						dismiss.setOnClickListener(
 								new View.OnClickListener() {
 									public void onClick(View v) {
-										popupWindow.dismiss();
-										popupWindow1.showAsDropDown(view1, 10, 10);
+										popupWindow.dismiss();										
 									}
 								});
-						/*dismiss1.setOnClickListener(
-new View.OnClickListener() {
-public void onClick(View v) {
-popupWindow1.dismiss();
-}
-});*/
 					}
 				}
 				);
-		//TextView textview = (TextView) view.findViewById(R.id.tabtextview);
-		//textview.setText("hello");
+
 		return view;
 	}
 
-		public class FeaturedEvents1 extends ActionBarActivity {
+	public class FeaturedEvents1 extends ActionBarActivity {
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
