@@ -16,38 +16,42 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 
 public class CalanderofEvents extends Fragment implements OnClickListener {
-	
+
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_calanderof_events, container, false);
 		//main button
 		ImageView imagebutton = (ImageView) view.findViewById(R.id.imagebutton);
-        imagebutton.setOnClickListener(
-        		new OnClickListener() {
-        		public void onClick(View v){
-        			LayoutInflater layoutInflater = (LayoutInflater)getActivity().getLayoutInflater();
-        			View view = layoutInflater.inflate(R.layout.event_popup, null);
-        			final PopupWindow popupWindow = new PopupWindow(view, 750, 1200);
-        			popupWindow.showAsDropDown(view, 10, 10);
+		//Button in popup, buttonception
+		ImageView popupbutton = (ImageView) view.findViewById(R.id.popupButton);
+		imagebutton.setOnClickListener(
+				new OnClickListener() {
+					public void onClick(View v){
+						LayoutInflater layoutInflater = (LayoutInflater)getActivity().getLayoutInflater();
+						View view = layoutInflater.inflate(R.layout.event_popup, null);
+						View view1 = layoutInflater.inflate(R.layout.event_popup, null);
+						final PopupWindow popupWindow = new PopupWindow(view, 850, 1200);
+						popupWindow.showAsDropDown(view, 10, 10);
 
-        			Button dismiss = (Button)view.findViewById(R.id.button1);
-        			dismiss.setOnClickListener(
-        					new View.OnClickListener() {
-        						public void onClick(View v) {
-        							popupWindow.dismiss();
-        						}
-        		});
-        		}
-        		}
-        		);
+						ImageView dismiss = (ImageView)view.findViewById(R.id.nextpage);
+						dismiss.setOnClickListener(
+								new View.OnClickListener() {
+									public void onClick(View v) {
+										popupWindow.dismiss();
+										
+									}
+								});
+					}
+				}
+				);
 		//TextView textview = (TextView) view.findViewById(R.id.tabtextview);
 		//textview.setText("hello");
-       
+
 		return view;
 	}
 	public class CalanderofEvents1 extends Activity {
 
-		
+
 		public void onCreate(Bundle savedInstanceState1) {
 			super.onCreate(savedInstanceState1);
 			setContentView(R.layout.activity_calanderof_events);
@@ -106,7 +110,7 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }
 /* This is laurens XML for this page.  Use if there is time to fix.
@@ -118,7 +122,7 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-        
+
 
     </LinearLayout>
 
@@ -136,4 +140,4 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
     </ListView>
 
 </LinearLayout>
-*/
+ */
