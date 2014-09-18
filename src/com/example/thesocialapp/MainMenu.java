@@ -1,3 +1,10 @@
+/*
+ * names: Mark, Chris, Lauren
+ * date: 9/19/14
+ * 
+ * This is the home page which contains the tabs. It is the control center of our app. It's a good page.
+ */
+
 package com.example.thesocialapp;
 
 import android.app.ActionBar;

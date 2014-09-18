@@ -1,3 +1,10 @@
+/*
+ * names: Mark, Chris, Lauren
+ * date: 9/19/14
+ * 
+ * This is the third tab. It is the favorites calendar.
+ */
+
 package com.example.thesocialapp;
 
 import android.app.Fragment;
@@ -17,9 +24,9 @@ public class MyCalanderPage extends Fragment implements OnClickListener {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_my_calander_page, container, false);
-		//main button
+		
 		ImageView imagebutton = (ImageView) view.findViewById(R.id.imageviewmyCal);
-
+		//this sets the image view to open a popup to the second half of the event page
 		imagebutton.setOnClickListener(
 				new OnClickListener() {
 					public void onClick(View v){

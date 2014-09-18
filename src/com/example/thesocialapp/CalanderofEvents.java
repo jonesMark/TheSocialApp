@@ -1,3 +1,10 @@
+/*
+ * names: Mark, Chris, Lauren
+ * date: 9/19/14
+ * 
+ * The second tab. It shows the full calendar.
+ */
+
 package com.example.thesocialapp;
 import android.app.Activity;
 import android.app.Fragment;
@@ -16,7 +23,7 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
 		View view = inflater.inflate(R.layout.activity_calanderof_events, container, false);
 		
 		ImageView imagebutton = (ImageView) view.findViewById(R.id.interestsBar);
-
+		//this image view brings up a popup on click
 		imagebutton.setOnClickListener(
 				new OnClickListener() {
 					public void onClick(View v){
@@ -44,13 +51,6 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
 		public void onCreate(Bundle savedInstanceState1) {
 			super.onCreate(savedInstanceState1);
 			setContentView(R.layout.activity_calanderof_events);
-			String[] events = getResources().getStringArray(R.array.friday_event_list);
-			Integer[] icons = {
-					R.drawable.my_calendar,
-					R.drawable.calendar_of_events,
-					R.drawable.featured_events,
-					R.drawable.my_calendar
-			};
 			
 		}
 		@Override

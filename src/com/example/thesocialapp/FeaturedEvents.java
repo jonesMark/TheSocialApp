@@ -1,3 +1,10 @@
+/*
+ * names: Mark, Chris, Lauren
+ * date: 9/19/14
+ * 
+ * This is the first tab. It shows the featured events.
+ */
+
 package com.example.thesocialapp;
 
 import android.app.Fragment;
@@ -13,13 +20,13 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 
 public class FeaturedEvents extends Fragment  {
-	boolean switchme = true;
+	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_featured_events, container, false);
-		//main button
+		
 		ImageView imagebutton = (ImageView) view.findViewById(R.id.feat);
-
+		//this sets the image view to open a popup of events page
 		imagebutton.setOnClickListener(
 				new OnClickListener() {
 					public void onClick(View v){
