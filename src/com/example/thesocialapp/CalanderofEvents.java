@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 
 public class CalanderofEvents extends Fragment implements OnClickListener {
@@ -20,7 +20,8 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_calanderof_events, container, false);
-		ImageButton imagebutton = (ImageButton) view.findViewById(R.id.imagebutton);
+		//main button
+		ImageView imagebutton = (ImageView) view.findViewById(R.id.imagebutton);
         imagebutton.setOnClickListener(
         		new OnClickListener() {
         		public void onClick(View v){

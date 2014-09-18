@@ -7,19 +7,18 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
-import android.widget.TextView;
 
 public class FeaturedEvents extends Fragment  {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 				Bundle savedInstanceState){
 			View view = inflater.inflate(R.layout.activity_featured_events, container, false);
-			
-			ImageButton imagebuttonfeatured = (ImageButton) view.findViewById(R.id.imagebuttonFeatured);
+			//Button
+			ImageView imagebuttonfeatured = (ImageView) view.findViewById(R.id.imagebuttonFeatured);
 	        imagebuttonfeatured.setOnClickListener(
 	        		new OnClickListener() {
 	        		public void onClick(View v){
