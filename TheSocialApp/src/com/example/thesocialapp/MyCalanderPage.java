@@ -7,15 +7,15 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.ImageButton;
 
-public class MyCalanderPage extends Fragment {
+public class MyCalanderPage extends Fragment implements OnClickListener {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_my_calander_page, container, false);
-		//TextView textview = (TextView) view.findViewById(R.id.tabtextview);
-		//textview.setText(/*R.string.One*/ "hello");
 		return view;
 	}
 
@@ -44,5 +44,11 @@ public class MyCalanderPage extends Fragment {
 			}
 			return super.onOptionsItemSelected(item);
 		}
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
 	}
 }

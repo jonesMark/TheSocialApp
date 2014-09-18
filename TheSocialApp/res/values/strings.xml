@@ -16,7 +16,6 @@
     <string name="description2">DJ Eight Ten presents Modern LOVE. Have you "\n"heard the good
         news? It\'s a dance party and you "\n"are invited! Music without borders,
         outside of time.</string>
-  
-    
+    <string name="title_activity_login_page">LoginPage</string>
 
 </resources>
