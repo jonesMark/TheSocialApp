@@ -10,12 +10,33 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.PopupWindow;
 
 public class MyCalanderPage extends Fragment implements OnClickListener {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_my_calander_page, container, false);
+		//Button
+		ImageView imagebuttonMyCal = (ImageView) view.findViewById(R.id.imagebuttonmyCal);
+      /*  imagebuttonMyCal.setOnClickListener(
+        		new OnClickListener() {
+        		public void onClick(View v){
+        			LayoutInflater layoutInflater = (LayoutInflater)getActivity().getLayoutInflater();
+        			View view = layoutInflater.inflate(R.layout.event_popup, null);
+        			final PopupWindow popupWindow = new PopupWindow(view, 750, 1200);
+        			popupWindow.showAsDropDown(view, 10, 10);
+
+        			Button dismiss = (Button)view.findViewById(R.id.button1);
+        			dismiss.setOnClickListener(
+        					new View.OnClickListener() {
+        						public void onClick(View v) {
+        							popupWindow.dismiss();
+        						}
+        		});
+        		}
+        		}*/
+        		//);
 		return view;
 	}
 
@@ -24,6 +45,9 @@ public class MyCalanderPage extends Fragment implements OnClickListener {
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_my_calander_page);
+			
+			
+			
 		}
 
 
