@@ -1,6 +1,3 @@
-/*
- * adding a comment to test git again
- */
 package com.example.thesocialapp;
 
 
@@ -13,8 +10,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -26,6 +25,30 @@ public class CalanderofEvents extends Fragment {
 		View view = inflater.inflate(R.layout.activity_calanderof_events, container, false);
 		//TextView textview = (TextView) view.findViewById(R.id.tabtextview);
 		//textview.setText("hello");
+		
+		ImageView myImage = (ImageView)view.findViewById(R.id.imageView1);
+		myImage.setOnClickListener(
+				new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						LayoutInflater layoutInflater = (LayoutInflater)getActivity().getLayoutInflater();
+						View view = layoutInflater.inflate(R.layout.event_popup, null);
+						final PopupWindow popupWindow = new PopupWindow(view, 750, 1200);
+						popupWindow.showAsDropDown(view, 10, 10);
+
+						Button dismiss = (Button)view.findViewById(R.id.button1);
+						dismiss.setOnClickListener(
+								new View.OnClickListener() {
+									public void onClick(View v) {
+										popupWindow.dismiss();
+									}
+
+
+								});
+					
+					}
+				});
+		
 		return view;
 	}
 	public class CalanderofEvents1 extends Activity {
