@@ -29,9 +29,9 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
 					public void onClick(View v){
 						LayoutInflater layoutInflater = (LayoutInflater)getActivity().getLayoutInflater();
 						View view = layoutInflater.inflate(R.layout.event_popup, null);
-						//View view1 = layoutInflater.inflate(R.layout.getsocial_popup, null);
+						final View view1 = layoutInflater.inflate(R.layout.getsocial_popup, null);
 						final PopupWindow popupWindow = new PopupWindow(view, 850, 1200);
-						//final PopupWindow popupWindow1 = new PopupWindow(view1, 850, 1200);
+						final PopupWindow popupWindow1 = new PopupWindow(view1, 850, 1200);
 						popupWindow.showAsDropDown(view, 10, 10);
 
 						ImageView dismiss = (ImageView)view.findViewById(R.id.nextpage);
@@ -41,7 +41,7 @@ public class CalanderofEvents extends Fragment implements OnClickListener {
 								new View.OnClickListener() {
 									public void onClick(View v) {
 										popupWindow.dismiss();
-										//spopupWindow1.showAsDropDown(view1, 10, 10);
+										popupWindow1.showAsDropDown(view1, 10, 10);
 									}
 								});
 						/*dismiss1.setOnClickListener(
