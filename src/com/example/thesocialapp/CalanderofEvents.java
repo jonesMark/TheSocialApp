@@ -9,20 +9,39 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
+import android.widget.ImageButton;
 import android.widget.PopupWindow;
-import android.widget.TextView;
 
-public class CalanderofEvents extends Fragment {
+public class CalanderofEvents extends Fragment implements OnClickListener {
 	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, 
 			Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.activity_calanderof_events, container, false);
+		ImageButton imagebutton = (ImageButton) view.findViewById(R.id.imagebutton);
+        imagebutton.setOnClickListener(
+        		new OnClickListener() {
+        		public void onClick(View v){
+        			LayoutInflater layoutInflater = (LayoutInflater)getActivity().getLayoutInflater();
+        			View view = layoutInflater.inflate(R.layout.event_popup, null);
+        			final PopupWindow popupWindow = new PopupWindow(view, 750, 1200);
+        			popupWindow.showAsDropDown(view, 10, 10);
+
+        			Button dismiss = (Button)view.findViewById(R.id.button1);
+        			dismiss.setOnClickListener(
+        					new View.OnClickListener() {
+        						public void onClick(View v) {
+        							popupWindow.dismiss();
+        						}
+        		});
+        		}
+        		}
+        		);
 		//TextView textview = (TextView) view.findViewById(R.id.tabtextview);
 		//textview.setText("hello");
+       
 		return view;
 	}
 	public class CalanderofEvents1 extends Activity {
@@ -82,6 +101,11 @@ public class CalanderofEvents extends Fragment {
 			}
 			return super.onOptionsItemSelected(item);
 		}
+	}
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
 	}
 }
 /* This is laurens XML for this page.  Use if there is time to fix.
