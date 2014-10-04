@@ -1,3 +1,10 @@
+/*
+ * names: Mark, Chris, Lauren
+ * date: 9/19/14
+ * 
+ * This is the Facebook login screen.
+ */
+
 package com.example.thesocialapp;
 
 import android.content.Intent;
@@ -8,7 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class LoginScreen extends ActionBarActivity {
-	
+	//this is the onClick method for the login screen image. It will take the user to the main menu
 	public void toMainMenu(View view) {
 		Intent intent = new Intent(this, MainMenu.class);
 		startActivity(intent);

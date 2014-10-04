@@ -4,7 +4,7 @@
     <string name="app_name">The Des Moines Social Club</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_main_menu">The Des Moines Social Club</string>
     <string name="title_activity_featured_events">FeaturedEvents</string>
     <string name="title_activity_calanderof_events">CalanderofEvents</string>
     <string name="title_activity_my_calander_page">MyCalanderPage</string>

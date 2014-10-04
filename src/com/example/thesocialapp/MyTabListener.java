@@ -1,3 +1,11 @@
+/*
+ * names: Mark, Chris, Lauren
+ * date: 9/19/14
+ * 
+ * This is the control center for our tabs. It picks up tab events adds currently clicked tabs to the
+ * tab container.
+ */
+
 package com.example.thesocialapp;
 
 import android.app.ActionBar.Tab;
